@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Argie Apostol | BSIT Student Portfolio</title>
+<meta name="description" content="Portfolio of Argie Apostol, BS Information Technology student at Cebu Eastern College.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="#home">Argie Apostol</a>
+  <button class="pill" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+  <nav id="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button class="pill" id="themeBtn" aria-label="Switch to dark mode">Dark</button>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <p class="hello">Hi, I'm</p>
+    <h1>Argie<br>Apostol</h1>
+    <p class="lead">Fourth-year BS Information Technology student at Cebu Eastern College. I'm learning web development, interface design, and basic networking.</p>
+    <p><a class="btn" href="#projects">See my projects</a> <a class="btn ghost" href="#contact">Get in touch</a></p>
+  </div>
+  <div class="frame">
+    <img class="photo" src="images/profile.jpg" alt="Photo of Argie Apostol" width="320" height="400" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'photo ph',textContent:'AA'}))">
+  </div>
+</section>
+
+<section id="about" class="split">
+  <h2>About me</h2>
+  <div>
+    <p>I study Information Technology in Cebu, Philippines. My class work covers websites, interface designs, and a 3D game, and this portfolio brings them together for my capstone.</p>
+    <div class="edu">
+      <h3>Education</h3>
+      <p><strong>Bachelor of Science in Information Technology</strong><br>Cebu Eastern College Incorporated<br>Currently enrolled, fourth year</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="split">
+  <h2>Skills</h2>
+  <div>
+    <ul class="tags">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Figma</li><li>Canva</li><li>3D game project</li>
+    </ul>
+    <p class="learn">Learning now: <strong>Basic Networking</strong></p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects and practice</h2>
+  <div class="cards">
+
+    <article class="card c1">
+      <div class="shot"><img src="images/cec-anomaly.jpg" alt="CEC Anomaly main menu" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
+      <div class="info">
+        <h3>CEC Anomaly</h3>
+        <p>A 3D horror game set in Cebu Eastern College. You complete tasks on each floor, free the spirits, and survive the demon.</p>
+        <p class="mine">My contribution: Designer</p>
+        <a class="link" href="https://canva.link/cefa5imlg2183wl" target="_blank" rel="noopener">Open on Canva</a>
+      </div>
+    </article>
+
+    <article class="card c2 top">
+      <div class="shot"><img src="images/luksong-baka.jpg" alt="Luksong Baka design" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
+      <div class="info">
+        <h3>Luksong Baka</h3>
+        <p>A game based on Luksong Baka, a traditional Filipino children's game from Bulacan where players leap over a bent-over "baka".</p>
+        <p class="mine">My contribution: Designed it in Figma</p>
+        <a class="link" href="https://edd112.github.io/PINOY-GAMES-LUKSONG-BAKA/index.html?from=intro" target="_blank" rel="noopener">Play the game</a> &nbsp;&middot;&nbsp; <a class="link" href="https://canva.link/hcdpyhs8hhc7whx" target="_blank" rel="noopener">Open on Canva</a>
+      </div>
+    </article>
+
+    <article class="card c3">
+      <div class="shot"><img src="images/inventory-dashboard.jpg" alt="Inventory Dashboard design" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
+      <div class="info">
+        <h3>Inventory Dashboard</h3>
+        <p>An inventory dashboard designed in Figma. It shows total products, near-expiry and out-of-stock counts, charts, and a product list.</p>
+        <p class="mine">My contribution: Backend and UI design</p>
+        <a class="link" href="https://www.figma.com/design/mb9rPaIqZkepweIZof1ti9" target="_blank" rel="noopener">Open on Figma</a>
+      </div>
+    </article>
+
+    <article class="card c4">
+      <div class="shot"><img src="images/stockmanager.jpg" alt="StockManager Manage Users page" loading="lazy" onerror="this.parentNode.classList.add('empty')"></div>
+      <div class="info">
+        <h3>StockManager</h3>
+        <p>An inventory management system with a dashboard, products, categories, activity logs, an expiration tracker, and user management.</p>
+        <p class="mine">My contribution: UI and UX designer</p>
+        <a class="link" href="https://stock-manager-gamma-rouge.vercel.app/accounts/login/?next=/" target="_blank" rel="noopener">Open the system</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let's talk</h2>
+  <p>Questions or feedback about my work are welcome.</p>
+  <p><a class="btn" href="mailto:argie122921@gmail.com">argie122921@gmail.com</a></p>
+</section>
+</main>
+
+<footer>&copy; <span id="yr"></span> Argie Apostol. Cebu Eastern College Incorporated.</footer>
+<script src="script.js"></script>
+</body>
+</html>
